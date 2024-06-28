@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Web Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      body{
+        background-color: rgb(175, 184, 156);
+      }
+    h1{
+        background-color: rgb(244, 241, 236);
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 60px;
+        margin-right: 60px;
+        border: 2px solid black;
+    }
+    #home{
+      margin-top: 10px;
+    }
+    h5{
+        color:black;
+        font-weight: bold;
+        margin-bottom: 65%;
+        margin-left: 60px;
+    }
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 4px solid #fff;
+        font-size: 7px;
+        background: transparent;
+        position: relative;          
+        cursor: pointer; 
+        width: 40%;
+        height: 15%;
+        }
+    .hero-btn:hover{
+        border: 4px solid #fff;
+        background: #f44336;
+        transition: 1s;
+        }
+    .aboutimg{
+        width: 35%;
+        height: 20%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    p{
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: bold;
+    }
+    .container{
+      display: flex;
+    }
+    .gallary{
+      width: 100%;
+      height: 80%;
+    }
+    .contact{
+      max-width: 500px;
+      background-color: black;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 10);
+      margin-left: 180px;
+    }
+    .btn1{
+      background-color: rgb(210, 84, 10);
+      color: white;
+      width: 30%;
+      border-radius: 6px;
+    }
+    .btn1:hover{
+      background-color: rgb(47, 13, 235);
+      transition: 1s;
+    }
+    .footer {
+   left: 0;
+   width: 100%;
+   height: 60px;
+   background-color: rgb(223, 210, 210);
+   color: black;
+   text-align: center;
+  }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#about">About</a></li>
+              <li><a class="dropdown-item" href="#gallary">Gallary</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact_Us</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <h1 id="home">&ensp;&ensp;Home</h1>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="NDA.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>National Defense Academy</h5>
+              <a href="https://en.wikipedia.org/wiki/National_Defence_Academy_(India)"class="hero-btn"><h3>Visit us to know more</h3></a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div><br>
+    <h1 id="about">&ensp;&ensp;About</h1>
+        <img class="aboutimg" align="left" src ="https://www.indicinspirations.com/cdn/shop/products/nda-medallion-antique-finish-coins-777962.jpg?v=1653936495" 
+        data-aos="zoom-in" data-aos-duration="3000">
+        <p>The National Defense Academy (NDA) was established in 1954 to provide common military training to cadets of the Indian Army, Indian Navy, and Indian Air Force. Field Marshal KM Cariappa, the first Indian commander-in-chief of the Indian Armed Forces, in the early 1950s first proposed the idea for the NDA.<br>
+        The NDA was established in response to the needs of the newly independent Indian nation, which was facing security challenges on multiple fronts. The academy was intended to serve as a single training institution for the three services, providing a common foundation of military education and training to all cadets before they went on to specialized training at their respective service academies.</p><br><br><br><br>
+          
+    <h1 id="gallary">&ensp;&ensp;Gallary</h1>
+    <center><img class="gallary" src="https://www.coloneldefenceacademy.in/wp-content/uploads/2015/12/best-nda-coaching-kuchaman-city.jpg" data-aos="zoom-in-down" data-aos-duration="1500"></center><br>
+    <h3 align="center" style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>&ensp;&ensp;Notable Alumni</b></h3>
+    <div class="container">
+    <div class="card" style="width: 325px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wing_Commander_Abhinandan_Varthaman_in_a_MiG-21_Trainer_aircraft%2C_at_Air_Force_Station_Pathankot%2C_Punjab_on_September_02%2C_2019_%28cropped%29.jpg/330px-Wing_Commander_Abhinandan_Varthaman_in_a_MiG-21_Trainer_aircraft%2C_at_Air_Force_Station_Pathankot%2C_Punjab_on_September_02%2C_2019_%28cropped%29.jpg" class="card-img-top">
+      <div class="card-body">
+      <p class="card-text">Abhinandan Varthaman</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bipin_Rawat_Chief_of_Defence_Staff_%28CDS%29.jpg/375px-Bipin_Rawat_Chief_of_Defence_Staff_%28CDS%29.jpg" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">Bipin Rawat</p>
+      </div>
+    </div>
+    <div class="card" style="width: 232px;">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Sandeep_Unnikrishnan.jpg" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">Sandeep Unnikrishnan</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Anil_Chauhan_Chief_of_Defence_Staff_%28CDS%29.jpg/330px-Anil_Chauhan_Chief_of_Defence_Staff_%28CDS%29.jpg" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">Anil Chauhan</p>
+      </div>
+    </div>
+  </div><br>
+
+  <h1 id="contact">&ensp;&ensp;Contact_Us</h1>
+  <table><tr><td>
+  <div class="contact">
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+    </div><br>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div><br>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>National Defence Academy</option>
+    <option value="1">Indian Army</option>
+    <option value="2">Indian Navy</option>
+    <option value="3">Indian Air Force</option>
+  </select><br>
+  <center><button class="btn1">Submit</button></center>
+</div></td>
+<td><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4976810375747!2d73.75653717379899!3d18.461102770990816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295e6a398b3c1%3A0x8b892a50f9e207ca!2sNDA%20Khadakwasla!5e0!3m2!1sen!2sin!4v1719249449580!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+</td></tr></table>
+
+<div class="footer">
+  <center>
+    <i class='bx bxs-map'></i>National Defence Academy-Pune, Maharashtra<br><i class='bx bxl-facebook-square bx-md' style='color:#021e4e'>&ensp; </i><i class='bx bxl-twitter bx-md'>&ensp;</i><i class='bx bxl-linkedin-square bx-md'>&ensp;</i><i class='bx bxl-instagram bx-md' style='color:#4456dc'></i>
+  </center>
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
